@@ -75,6 +75,7 @@ namespace DB_PKDIENTU_20042025.Controllers
                 return RedirectToAction("Index", "NhanVien");
 
         }
+        //ok
 
         public ActionResult About()
         {
