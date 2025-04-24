@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_PKDIENTU_20042025" Class="DB_PKDIENTU_20042025DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Sys_user" Member="Sys_users">
+    <Type Name="Sys_user">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ma_user" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ten_user" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ten_user2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="admin" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="acc" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="inv" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="cmnd" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="dia_chi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="status" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ghi_chu" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="user0" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="user1" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="datetime0" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="datetime1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ngay_khoa_1" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="ngay_khoa_2" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="quyen_qtsx" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="quyen_qtkd" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

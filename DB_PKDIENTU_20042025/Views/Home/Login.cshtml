@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Login";
+    var error = TempData["Error"] as string;
+    var focusId = TempData["Focus"] as string;
+}
+<main aria-labelledby="title">
+    @using (@Html.BeginForm("DangNhap", "Home", FormMethod.Post, new { @class = "needs-validation", @novalidate = "true" }))
+    {
+        @*<h2 id="title">@ViewBag.Title.</h2>*@
+        @*<h3>@ViewBag.Message</h3>*@
+        <section class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center" style="color:blue">Đăng nhập</h2>
+                            @if (Session["ok"] != null)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    @Session["ok"].ToString()
+                                </div>
+                                Session["ok"] = null;
+                            }
+                            <div class="form-group">
+                                <!--Nhập tên đăng nhập-->
+                                <label for="email">Tên tài khoản</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" id="email" name="txt_username" class="form-control" placeholder="Nhập vào tài khoản của bạn" required autofocus value="@TempData["Username"]">
+                                    <div class="invalid-feedback">Vui lòng nhập tên đăng nhập.</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--Nhập mật khẩu-->
+                                <label for="password">Mật khẩu</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-loc"></i></span>
+                                    </div>
+                                    <input type="password" id="password" name="txt_password" class="form-control" placeholder="Nhập vào mật khẩu của bạn" required>
+                                    <div class="invalid-feedback">Vui lòng nhập mật khẩu.</div>
+                                </div>
+                            </div>
+
+                            @if (Session["tb"] != null)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    @Session["tb"].ToString()
+                                </div>
+                                Session["tb"] = null;
+                            }
+
+                            <!--Nút đăng nhập-->
+
+                            <div class="form-group d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                <button type="button" class="btn btn-secondary">Hủy bỏ</button>
+                            </div>
+                            @if (!string.IsNullOrEmpty(error))
+                            {
+                                <div class="alert alert-danger">@error</div>
+                                <script>
+                                    // focus vào input cần thiết
+                                    document.getElementById('@focusId').focus();
+                                </script>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+ </main>
+

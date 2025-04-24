@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB_PKDIENTU_20042025">
+  <DataContextMoniker Name="/DB_PKDIENTU_20042025DataContext" />
+  <nestedChildShapes>
+    <classShape Id="85e72f3f-d930-4c5e-a096-6a5501390ba5" absoluteBounds="2.25, 1.125, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/DB_PKDIENTU_20042025DataContext/Sys_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae40ce3d-be3e-4996-b46b-94658d418899" absoluteBounds="2.265, 1.585, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
